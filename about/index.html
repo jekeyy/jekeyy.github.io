@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             height: 100%;
             width: 100%;
         }
-        div{
+
+        .box {
             height: 100%;
             width: 100%;
+            display: flex;
+        }
+
+        .first {
+            min-width: 200px;
+            width: 20%;
+            height: 100%;
+            background-color: rgb(43, 74, 110);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last {
+            width: 80%;
+            height: 100%;
             background-color: pink;
+            display: flex;
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <p>hhhhh</p>
+    <div class="box">
+        <div class="first">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="last">
+            <div></div>
+            <div onclick="show()">1</div>
+        </div>
+
     </div>
-    
+    <script>
+        function show() {
+            alert("hello")
+        }
+    </script>
 </body>
+
 </html>
