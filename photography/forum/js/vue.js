@@ -9130,7 +9130,7 @@
           "class=\"" + staticClass + "\": " +
           'Interpolation inside attributes has been removed. ' +
           'Use v-bind or the colon shorthand instead. For example, ' +
-          'instead of <div class="">, use <div :class="val">.',
+          'instead of <div class="{{ val }}">, use <div :class="val">.',
           el.rawAttrsMap['class']
         );
       }
@@ -9175,7 +9175,7 @@
             "style=\"" + staticStyle + "\": " +
             'Interpolation inside attributes has been removed. ' +
             'Use v-bind or the colon shorthand instead. For example, ' +
-            'instead of <div style="">, use <div :style="val">.',
+            'instead of <div style="{{ val }}">, use <div :style="val">.',
             el.rawAttrsMap['style']
           );
         }
@@ -10384,7 +10384,7 @@
               name + "=\"" + value + "\": " +
               'Interpolation inside attributes has been removed. ' +
               'Use v-bind or the colon shorthand instead. For example, ' +
-              'instead of <div id="">, use <div :id="val">.',
+              'instead of <div id="{{ val }}">, use <div :id="val">.',
               list[i]
             );
           }
