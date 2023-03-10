@@ -14,6 +14,13 @@
             width: 100%;
         }
 
+        @media (max-width: 1000px) {
+            * {
+                height: 90%;
+                width: 100%;
+            }
+        }
+
         .box {
             height: 100%;
             width: 75%;
@@ -164,11 +171,12 @@
             width: 100%;
             height: 100%;
             display: none;
+            overflow-y: auto;
         }
 
         .xm {
             width: 100%;
-            height: 100%;
+            height: 190%;
             background-color: rgba(46, 46, 45, 0.302);
             display: flex;
             flex-direction: column;
@@ -176,17 +184,74 @@
             align-items: center;
         }
 
-        .xm>div {
+        .xm>div:first-child{
             width: 90%;
-            height: 30%;
+            height: 40%;
             background-color: rgba(46, 46, 45, 0.702);
-            border-radius: 20px;
-            overflow-y: auto;
+            border-radius: 15px;
         }
-
+        .xm>div:nth-child(2) {
+            width: 90%;
+            height: 40%;
+            background-color: rgba(46, 46, 45, 0.702);
+            border-radius: 15px;
+        }
+        .xm>div:last-child{
+            width: 90%;
+            height: 10%;
+            background-color: rgba(46, 46, 45, 0.702);
+            border-radius: 15px;
+            text-align: center;font-size: 25px;
+            position: relative;
+            color: #fff;
+        }
+        .xm>div:last-child a{
+            font-size: 15px;
+            position: absolute;
+            top: 31px;
+            left: 15px;
+        }
         #friend,
         #friend1 {
             cursor: pointer;
+            color: rgb(0, 0, 0);
+        }
+
+        
+        .xmzs{
+            width: 100%;
+            height: 100%;
+        }
+        .xmzs>p {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        .xmzs1 {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        .xmzs1>img {
+            width: 220px;
+            margin: 0 0 0 10px;
+        }
+        .xmzs2 {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        .xmzs2>img {
+            width: 300px;
+            margin: 0 0 0 10px;
         }
     </style>
 </head>
@@ -218,10 +283,42 @@
                 <div id="d2">
                     <div class="xm">
                         <div>
-                            <div style="height: 1000px;"></div>
+                            <div class="xmzs">
+                                <p>微信小程序</p>
+                                <div class="xmzs1">
+                                    <img src="./images/02.jpg" alt="">
+                                    <img src="./images/03.jpg" alt="">
+                                    <img src="./images/04.jpg" alt="">
+                                    <img src="./images/05.jpg" alt="">
+                                    <img src="./images/06.jpg" alt="">
+                                    <img src="./images/07.jpg" alt="">
+                                    <img src="./images/08.jpg" alt="">
+                                    <img src="./images/09.jpg" alt="">
+                                    <img src="./images/10.jpg" alt="">
+                                    <img src="./images/11.jpg" alt="">
+                                    <img src="./images/12.jpg" alt="">
+                                    <img src="./images/13.jpg" alt="">
+                                    <img src="./images/14.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <div class="xmzs">
+                                <p>AI影院（vue.js)</p>
+                                <div class="xmzs2">
+                                    <img src="./images/21.png" alt="">
+                                    <img src="./images/22.png" alt="">
+                                    <img src="./images/23.png" alt="">
+                                    <img src="./images/24.png" alt="">
+                                    <img src="./images/25.png" alt="">
+                                    <img src="./images/26.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>摄影网站</p>
+                            <a href="https://jekeyy.github.io/photography/home/index/">点击去看看</a>
+                        </div>
                     </div>
 
                 </div>

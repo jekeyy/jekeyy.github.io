@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#all {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eeeeee;
+    /* background-color: royalblue; */
+}
+
+#logo {
+    width: 100px;
+    height: 48px;
+    padding-top: 2px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.top ul li {
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    font-family: '黑体';
+    margin-right: 30px;
+    line-height: 50px;
+}
+
+.top a {
+    text-decoration: none;
+    color: #525558;
+}
+
+.search {
+    width: 425px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+.inputSearch {
+    width: 405px;
+    height: 28px;
+    float: left;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    margin-top: 9px;
+    outline: none;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+}
+
+.focusInput{
+    width: 405px;
+    height: 28px;
+    float: left;
+    border-radius: 20px;
+    margin-top: 9px;
+    outline: none;
+    background-color: white;
+    padding-left: 20px;
+    border: 1px solid #87cefa;
+}
+
+.search input::-webkit-input-placeholder{color: #cbcbcb;} 
+
+.round_icon {
+    float: left;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: 400px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.userName {
+    width: 80px;
+    height: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    height: 716px;
+}
+.left{
+    width: 70%;
+    height: 716px;
+    float: left;
+    background-color: #f7f8fa;
+    border-right: 1px solid #eeeeee;
+}
+.right{
+    width: 25%;
+    height: 716px;
+    float: left;
+}
+.choose{
+    width: 210px;
+    height: 210px;
+    border: 2px solid #cbcbcb;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.choose span{
+    font-size: 25px;
+    color: #cbcbcb;
+    line-height: 160px;
+}
+.choose h3{
+    color: #cbcbcb;
+    margin-top: -60px;
+}
+.title{
+    width: 100%;
+    height: 13%;
+    float: left;
+    margin-top: 30px;
+}
+.title span{
+    font-size: 16px;
+    font-family: '黑体';
+    color: #222222;
+    margin-left: 15px;
+}
+.title input{
+    width: 320px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+}
+
+.describe{
+    width: 100%;
+    height: 22%;
+    float: left;
+    margin-top: 20px;
+}
+.describe span{
+    font-size: 16px;
+    font-family: '黑体';
+    color: #222222;
+    margin-left: 15px;
+}
+.describe input{
+    width: 320px;
+    height: 110px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+}
+
+.attribute{
+    width: 100%;
+    height: 13%;
+    float: left;
+    margin-top: 20px;
+}
+
+.attribute span{
+    font-size: 16px;
+    font-family: '黑体';
+    color: #222222;
+    margin-left: 15px;
+}
+
+.attribute select{
+    width: 320px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.type{
+    width: 100%;
+    height: 13%;
+    float: left;
+    margin-top: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.type span{
+    font-size: 16px;
+    font-family: '黑体';
+    color: #222222;
+    margin-left: 15px;
+}
+
+.type select{
+    width: 320px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.right button{
+    width: 320px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 0;
+    background-color: #2ac5a7;
+    color: white;
+    font-size: 18px;
+    font-family: '黑体';
+    letter-spacing: 3px;
+    outline: none;
+    cursor: pointer;
+}

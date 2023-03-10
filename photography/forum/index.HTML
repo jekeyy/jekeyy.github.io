@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论坛</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="DaoHang">
+        <img src="image/logo.jpg" alt="">
+        <div id="DaoHang-lj">
+            <a href="../../photography/home/index/index.html">首页</a>
+            <a href="../../photography/works/html/picshow.html">作品集</a>
+            <a href="../../photography/mine/go.html">作品上传</a>
+            <a href="#">论坛</a>
+            <a href="../../photography/mine/mine.html">个人中心</a>
+        </div>
+        <input type="text" class="SouSuo" placeholder="   请输入搜索内容">
+        <input type="submit" value="搜索" class="SouSouK">
+        <div id="YongHu">
+            <a href="../works/html/login.html">登录</a>
+            <a href="../works/html/zhuc.html">注册</a>
+        </div>
+    </div>
+    <div id="NeiRong">
+        <div id="NR-1">
+            <div id="NR1-top">
+                <a href="javascript:;" @click="tabId=1" :class={cur:tabId==1}>文章</a>
+                <a href="javascript:;" @click="tabId=2" :class={cur:tabId==2}>问答</a>
+                <a href="javascript:;" @click="tabId=3" :class={cur:tabId==3}>关注</a>
+            </div>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>便宜实用的摄影道具</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/01.png" alt="">
+                <p> 三棱镜：我们读书时就知道，三棱镜可以分离光线，制造出彩虹的效果。利用三棱镜的这个特性，可以增强画面，制造梦幻般的效果。你看，是不是还有胶片的漏光效果呢？效果可比那些山寨滤镜强多了。眼镜：没错，眼镜也是一个很好的道具，并且随手可得，虽然说一副眼镜不算便宜，但是现在戴眼镜的人比比皆是，所以说几乎是零成本，但却有意想不到的效果哦。
+                </p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);" class="admin"><img src="image/admin/01.jpg" alt="">@盐选</a>
+                    <h5>346条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(0)">
+                            <img src="image/icon/喜欢.png" alt="" id="0">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>你真的理解曝光、高光、白色在摄影后期中的区别和用法吗？</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/02.png" alt="">
+                <p>在《轻松美化照片 -
+                    理解Lightroom基本面板的色调与影调控制》一文中，Thomas和大家简单介绍过曝光、对比度、高光、阴影、白色、黑色这几个滑块的大致用法。但是这几个滑块背后的算法经过Adobe多次迭代，并不是大家想象的那么简单，下面几个问题，不知道大家能回答上吗？
+                    1）为什么曝光滑块左移不会暗部溢出，但会高光缺失，右移不会暗部缺失，却会高光溢出？
+                    2）你知道高光阴影滑块对照片的清晰度和纹理细节也有影响吗？
+                    3）哪些情况不仅不能减高光，还需要加高光？
+                    4）加阴影减黑色，和加黑色减阴影，效果有什么不同？
+                    如果大家对上面的问题还不太清楚的话，今天的教程视频值得一看。</p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);"><img src="image/admin/02.jpg" alt="">@平老虎</a>
+                    <h5>178条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(1)">
+                            <img src="image/icon/喜欢.png" alt="" id="1">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>如何学习摄影中的色彩运用？</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/03.png" alt="">
+                <p>我们生活在一个五颜六色的世界上，很小的时候，我们就学会了用双眼去发现身边的颜色，而大自然，无疑是一位天才调色师。它将自然界中各种颜色调配组合在一起，构成了十分和谐、美丽的画面。沉醉于色彩的人们，通过绘画、摄影的方式，将其记录下来。一张好的摄影作品，
+                    除了会利用光影及明暗度进行气氛的掌控，还要会利用色彩控制影像的调性，使其整体具协调性及统一性。色彩的搭配决定了照片的视觉美感。好的色彩搭配可以让一幅作品赏心悦目，而错误的色彩也可能造成一场视觉灾难。今天就来学习一下摄影中最基础的色彩知识和搭配小技巧吧~
+                </p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);"><img src="image/admin/03.jpg" alt="">@鸟酱呀</a>
+                    <h5>129条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(2)">
+                            <img src="image/icon/喜欢.png" alt="" id="2">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>如何欣赏、点评摄影作品？</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/04.png" alt="">
+                <p>学会欣赏摄影作品是摄影人的基本技能之一，一张摄影作品怎样才算好看？怎么样才能引人瞩目？
+                    剖析、梳理并了解对一张摄影作品的赏析和点评思路，不但有利于提升我们自身的艺术鉴赏能力，更利于丰富和提升我们在摄影过程中的创作力以及掌控摄影器材的能力。</p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);"><img src="image/admin/04.jpg" alt="">@千夜SEVEN</a>
+                    <h5>278条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(3)">
+                            <img src="image/icon/喜欢.png" alt="" id="3">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>对摄影小白而言，手机摄影有什么基本技巧?</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/05.png" alt="">
+                <p>你手机里是不是躺着很多拍照修图软件，但其实连自带的相机功能都没有研究过？被说中的人请自觉到下面排队点赞。自手机摄影开始流行，大家就陷入一个误区：手机摄影很简单。相比于专业摄影设备，手机操作确实很简单，但这不代表用手机拍出一张好照片也是件简单的事。手机摄影也需要掌握基本功，暂时放下手机里那些花里胡哨的拍照修图软件，舍弃那些千篇一律的特效和滤镜，从最基础的自带相机功能开始学起吧。
+                </p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);"><img src="image/admin/05.jpg" alt="">@trib</a>
+                    <h5>278条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(4)">
+                            <img src="image/icon/喜欢.png" alt="" id="4">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+            <span v-show="tabId==1" class="WenZhang">
+                <a href="javascript:void(0);">
+                    <h2>手机摄影—9宫格的正确用法</h2>
+                </a>
+                <div class="BiaoQian">文章</div>
+                <img src="image/pic/06.png" alt="">
+                <p>九宫格：通过四条线，将画面均匀的分成9等分，而这4个交叉点，被称作黄金分割点。
+                    九宫格构图法：将被摄物体放到9宫格的4个交叉点当中的某一个交叉点，更具有突出主体和吸引视觉感官的作用。</p>
+                <div class="DiLan">
+                    <a href="javascript:void(0);"><img src="image/admin/06.jpg" alt="">@长明</a>
+                    <h5>278条评论</h5>
+                    <div class="DiLan-right">
+                        <a href="javascript:void(0);" onclick="alert('分享成功！')"><img src="image/icon/分享.png"
+                                alt="">分享</a>
+                        <a href="javascript:void(0);" onclick="alert('收藏成功！')"><img src="image/icon/收藏.png"
+                                alt="">收藏</a>
+                        <a href="javascript:void(0);" onclick="ts(5)">
+                            <img src="image/icon/喜欢.png" alt="" id="5">喜欢</a>
+
+                    </div>
+                </div>
+            </span>
+
+
+
+            <span v-show="tabId==2" class="WenDa">
+                <a href="javascript:void(0);">
+                    <h2>有哪些适合摄影新手学习的摄影网站？</h2>
+                </a>
+                <div class="BiaoQian">问答</div>
+                <p><a href="javascript:void(0);">@FN高强：新境 - 层级化摄影资料库 </a></p>
+                <p><a href="javascript:void(0);">@景尚2019：petapixel - 最新的摄影知识小技巧和摄影趣闻</a></p>
+                <p><a href="javascript:void(0);">@绅深：fstopper - 专业摄影知识网站</a></p>
+                <p><a href="javascript:void(0);">@FNYX11154928：slr - 摄影教程和摄影器材知识分享</a></p>
+
+            </span>
+            <span v-show="tabId==2" class="WenDa">
+                <a href="javascript:void(0);">
+                    <h2>佳能760D拍摄星空，求大神推荐镜头</h2>
+                </a>
+                <div class="BiaoQian">问答</div>
+                <p><a href="javascript:void(0);">@望舒和：按照您的预算，推荐腾龙10-24二代。或者佳能10-22（稍贵）。</a></p>
+                <p><a href="javascript:void(0);">@费悟：买了一个三阳14，2.8</a></p>
+                <p><a href="javascript:void(0);">@南通阿扎尔：其实还有一个头可以考虑，就是图丽最新款的11-16，光圈2.8,价格3600，但是图丽过于冷门，实在不知道品质如何！</a>
+                </p>
+
+            </span>
+            <span v-show="tabId==2" class="WenDa">
+                <a href="javascript:void(0);">
+                    <h2>求教各位大神，拍70人左右集体照用什么镜头？</h2>
+                </a>
+                <div class="BiaoQian">问答</div>
+                <p><a href="javascript:void(0);">@温泉三毛：拍过70人以上合影，焦段35以上，否则变形，镜头最好红圈，相机像素越高越好</a></p>
+                <p><a href="javascript:void(0);">@彦彬Trent：这个应该要接片了，用广角拍人会拍的很小</a></p>
+                <p><a href="javascript:void(0);">@FNYX11159134：用了佳能那个不是红头的L头,6D2,单点中间排,两边留一些空位,自我感觉还骗得了人</a></p>
+
+            </span>
+            <span v-show="tabId==2" class="WenDa">
+                <a href="javascript:void(0);">
+                    <h2>纯小白新手，如何挑选器材，求大佬指教</h2>
+                </a>
+                <div class="BiaoQian">问答</div>
+                <p><a href="javascript:void(0);">@小吴师傅：3000内拿下，二手d7000...1200。加上手动85 1.8，手动24 2.8。不到3000</a></p>
+                <p><a href="javascript:void(0);">@zltsdw：D750加套头</a></p>
+                <p><a href="javascript:void(0);">@一文一镜：二手A7 M2 5K 蔡司24- 70 4500 85-1.8 4000
+                        镜头或者 28 F2 3000 蔡司55 1.8 4500 28-70 1000</a></p>
+                <p><a href="javascript:void(0);">@自由3721：我准备入手佳能6D2+适马24-70，价格就是1万5，可以参考下</a></p>
+
+            </span>
+
+        </div>
+        <div id="NR-2">
+            <a href="javascript:void(0);"><img src="image/icon/问答.png" alt="">发问答</a>
+            <a href="javascript:void(0);"><img src="image/icon/文章.png" alt="">写文章</a>
+        </div>
+        <div id="NR-3">
+            <a href="javascript:void(0);">我的收藏 ></a>
+            <a href="javascript:void(0);">我的文章 ></a>
+            <a href="javascript:void(0);">我的问答 ></a>
+            <a href="javascript:void(0);">我的关注 ></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#NeiRong',
+            data: {
+                tabId: 1,
+
+            }
+        })
+        var a = 1;
+        function ts(num) {
+            a++
+            if (a % 2 == 0) {
+                document.getElementById(num).src = "image/icon/喜欢-红.png";
+
+            } else {
+                document.getElementById(num).src = "image/icon/喜欢.png";
+
+            }
+        }
+
+
+
+        // function ts() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ss").src = "image/icon/喜欢-红.png";
+
+        //     } else {
+        //         document.getElementById("ss").src = "image/icon/喜欢.png";
+
+        //     }
+        // }
+
+        // function ts1() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ts1").src = "image/icon/喜欢-红.png";
+        //     } else {
+        //         document.getElementById("ts1").src = "image/icon/喜欢.png";
+        //     }
+        // }
+
+        // function ts2() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ts2").src = "image/icon/喜欢-红.png";
+        //     } else {
+        //         document.getElementById("ts2").src = "image/icon/喜欢.png";
+        //     }
+        // }
+
+        // function ts3() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ts3").src = "image/icon/喜欢-红.png";
+        //     } else {
+        //         document.getElementById("ts3").src = "image/icon/喜欢.png";
+        //     }
+        // }
+
+        // function ts4() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ts4").src = "image/icon/喜欢-红.png";
+        //     } else {
+        //         document.getElementById("ts4").src = "image/icon/喜欢.png";
+        //     }
+        // }
+
+        // function ts5() {
+        //     a++;
+        //     if (a % 2 == 0) {
+        //         document.getElementById("ts5").src = "image/icon/喜欢-红.png";
+        //     } else {
+        //         document.getElementById("ts5").src = "image/icon/喜欢.png";
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="登录                                                  返回                                                 登录摄影社区网站">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://jekeyy.github.io/photography/works/html/login.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="登录                                                  返回                                                 登录摄影社区网站">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-10T09:43:46.080Z">
+<meta property="article:modified_time" content="2023-03-10T09:43:46.080Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://jekeyy.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/photography/works/html/login.html" class="article-date">
+  <time class="dt-published" datetime="2023-03-10T09:43:46.080Z" itemprop="datePublished">2023-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/111.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/panding.js"></script>
+</head>
+
+<body>
+    <div id="imgg" style="height: 730px;">
+        <div class="return" onclick="ret()">
+            返回
+        </div>
+        <div class="content">
+
+            <div class="logo">
+                <p>登录摄影社区网站</p>
+            </div>
+            <div class="information">
+                <form name="theForm" id="demo" method="get" onSubmit="return Validator.Validate(this,2)">
+
+                    <div class="qiehuan">
+                        <div class="Q1">手机号码登录</div>
+                        <!-- <div class="Q2">邮箱/用户名</div> -->
+                    </div><br />
+
+                    <div class="phone">
+                        <select>
+                        <option><span>+86</span><span>中国大陆</span></option>
+                        <option><span>+886</span><span>中国台湾</span></option>
+                        <option><span>+852</span><span>中国香港</span></option>
+                        <option><span>+853</span><span>中国澳门</span></option>
+                        <option><span>+60</span><span>马来西亚</span></option>
+                        <option><span>+65</span><span>新加坡</span></option>
+                        <option><span>+81</span><span>日本</span></option>
+                        <option><span>+82</span><span>韩国</span></option>
+                        <option><span>+1</span><span>美国</span></option>
+                        <option><span>+1</span><span>加拿大</span></option>
+                        <option><span>+61</span><span>澳大利亚</span></option>
+                        <option><span>+64</span><span>新西兰</span></option>
+                        <option><span>+54</span><span>阿根廷</span></option>
+                        <option><span>+971</span><span>阿联酋</span></option>
+                        <option><span>+353</span><span>爱尔兰</span></option>
+                    </select>
+                        <input class="phoneN" type="text" placeholder="电话号码">
+                    </div><br />
+
+                    <input type="text" class="password" id="password" placeholder="密码"><br />
+
+                    <div class="code">
+                        <input type="text" class="codeIn" placeholder="验证码">
+                        <div class="codeImg" id="codeImg"></div>
+                    </div><br />
+                    <input class="login" type="button" value="确定提交" onclick="panding()"><br />
+                    <!-- <button type="submit" class="login">登录</button><br /> -->
+
+                    <div class="xieyi">
+                        <input type="radio" id="xieyi">
+                        <span>我已了解，并同意<a href="#">服务协议</a>和<a href="#">隐私政策</a></span>
+                    </div>
+            </div>
+            <p class="zhuc">还没有账户？<a href="../html/zhuc.html">注册</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        //做一个随机生成的验证码
+        var codeStr = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        var oDiv = document.getElementById('codeImg');
+        // 用来生成随机整数
+        function getRandom(n, m) { // param: (Number, Number)
+            n = Number(n);
+            m = Number(m);
+            // 确保 m 始终大于 n
+            if (n > m) {
+                var temp = n;
+                n = m;
+                m = temp;
+            }
+            return Math.floor(Math.random() * (m - n) + n);
+        }
+        // 将随机生成的整数下标对应的字母放入div中
+        function getCode() {
+            var str = '';
+            // 验证码有几位就循环几次
+            for (var i = 0; i < 4; i++) {
+                var ran = getRandom(0, 62);
+                str += codeStr.charAt(ran);
+            }
+            oDiv.innerHTML = str;
+        }
+        getCode(); // 调用函数，页面刷新也会刷新验证码
+        // 点击刷新验证码
+        oDiv.onclick = function() {
+            getCode();
+        }
+    </script>
+
+</body>
+
+</html>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jekeyy.github.io/photography/works/html/login.html" data-id="clf2es2hg000kxwa790u1918u" data-title="" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/03/02/hello-world/">Hello World??</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

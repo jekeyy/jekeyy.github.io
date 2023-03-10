@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pic_content {
+    width: 600px;
+    height: 438px;
+    background-color: yellow;
+    position: relative;
+    float: left;
+}
+
+.pic_content:nth-child(odd) {
+    margin-left: 10%;
+    margin-top: 12px;
+}
+
+.pic_content:nth-child(even) {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.pic_ope {
+    height: 64px;
+    width: 100%;
+    background-color: rgba(92, 92, 92, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pic_user {
+    height: 100%;
+    width: 40%;
+    /* background-color: tomato; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pic_user ul {
+    height: 100%;
+    width: 50%;
+}
+
+.pic_user ul li {
+    line-height: 64px;
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+.pic_user ul li:first-child {
+    height: 100%;
+    width: 35%;
+    margin-left: 20%;
+    margin-top: 12px;
+}
+
+.pic_user ul li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    src: url("../img/55.jpg");
+    background-size: 100%;
+}
+
+.pic_anniu {
+    width: 30%;
+    height: 64px;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pic_anniu ul li {
+    float: left;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    padding-top: 18px;
+    list-style-type: none;
+}
+
+.pic_anniu ul li img {
+    width: 28px;
+    height: 28px;
+}
